@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/wikiDB", { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect("mongodb+srv://admin-sherali:test123@todolist.govc7.mongodb.net/wikiDB", { useUnifiedTopology: true, useNewUrlParser: true });
 
 const articleSchema = {
     title: String,
